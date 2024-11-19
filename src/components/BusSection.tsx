@@ -52,15 +52,11 @@ export default function BusSection() {
 
     return (
         <div className="busSection">
-            {buses.length > 0 ? (
                 <div className="busCards">
                     {buses.map(bus => (
                         <BusCard key={bus.id} bus={bus} />
                     ))}
                 </div>
-            ) : (
-                <p>Loading...</p>
-            )}
     
             <div className="pagination">
                 <button onClick={handlePrevPage} disabled={page === 0}>
