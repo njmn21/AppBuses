@@ -1,0 +1,41 @@
+.busSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    margin: auto;
+}
+
+.busSection .busCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.busSection .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    gap: 8px;
+}
+
+.busSection .pagination button {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    background-color: #333333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.busSection .pagination button:hover {
+    background-color: #ddd;
+}
+
+.busSection .pagination button:disabled {
+    background-color: #333333;
+    cursor: not-allowed;
+}
